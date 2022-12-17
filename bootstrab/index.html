@@ -5,32 +5,144 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="stayl/bootstrap.min.css">
+    <link rel="stylesheet" href="stayl/all.min.css">
     <link rel="stylesheet" href="stayl/main.css">
     <title>Document</title>
 </head>
 <body>
-    <ul class="nav nav-tabs justify-content-center bg-info" id="myTab" role="tablist">
+    <div class="collapse" id="navbarToggleExternalContent">
+        <div class="bg-dark p-4">
+            <div class="links">
+                <h5 class="text-white h4 ">MOUNTAINS</h5>
+                <a href="#HOME">HOME</a>
+                <a href="#SERVES">SERVES</a>
+                <a href="#PHOTO">PHOTO</a>
+                <a href="#LOGIN">LOGIN</a>
+            </div>
+        </div>
+      </div>
+      <nav class="navbar navbar-dark bg-dark">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+      </nav>
+        <header class="header" id="home">
+            <div class="layout w-100 vh-100 d-flex justify-content-center align-items-center text-center text-white">
+                <div class="message">
+                    <h2>Welcome To <span>mountains</span></h2>
+                    <p class="lead mt-2">A mountain is an elevated portion of the Earth's crust, generally with steep sides
+                        that
+                        show
+                        significant exposed bedrock</p>
+                </div>
+            </div>
+        </header>
+    <!-- start country  -->
+    <!-- <section id="country" class="country py-5 bg-light">
+        <div class="country-caption text-center mb-5 d-flex justify-content-center align-items-center">
+            <div class="text-header text-white w-100 h-100 d-flex justify-content-center align-items-center">
+                <div class="text">
+                    <h3 class="text-uppercase mt-4">Countries</h3>
+                    <p class="lead my-5">Lorem ipsum dolor sit, amet consectetur adipisicing elit. At, quo!</p>
+                </div>
+            </div>
+        </div> -->
+        <section id="service" class="service py-5 bg-light">
+            <div class="container">
+                <div class="service-caption text-center mb-5">
+                    <h3 class=" d-inline">Service</h3>
+                </div>
+                </div>
+        </section>
+        <div class="row p-4 g-3">
+            <div class="col-md-4 justify-content-space-between ">
+                <div class="icon"> 
+                    <i class="fas fa-eye-slash">
+
+                </i>
+            </div>
+                <img class="w-100" src="imge/daniel-olah-ZbEURDlbE6o-unsplash.jpg" alt=" ">
+            </div>
+            <div class="col-md-4">
+               <div class="icon"> 
+                <i class="fas fa-eye-slash ">
+            </i>
+        </div>
+                <img class="w-100" src="imge/henrik-mohr-Yk8D25dc6ig-unsplash.jpg" alt="">
+            </div>
+            <div class="col-md-4">
+                <div class="icon"> 
+                    <i class="fas fa-eye-slash ">
+                </i>
+            </div>
+                <img class="w-100" src="imge/abhishek-koli-v_IJOk65reM-unsplash.jpg " alt="">
+            </div>
+            <div class="col-md-4">
+                <div class="icon"> 
+                    <i class="fas fa-eye-slash ">
+                </i>
+            </div>
+                <img class="w-100" src="imge/levan-badzgaradze-OiqCeerPKEQ-unsplash.jpg" alt="">
+            </div>
+            <div class="col-md-4">
+                <div class="icon"> 
+                    <i class="fas fa-eye-slash ">
+                </i>
+            </div>
+                <img class="w-100" src="imge/oz-seyrek-WngNOIrN4ho-unsplash.jpg" alt="">
+            </div>
+            <div class="col-md-4">
+                <div class="icon"> 
+                    <i class="fas fa-eye-slash ">
+                </i>
+            </div>
+                <img class="w-100" src="imge/visualsofdana-xQk_XFyGpos-unsplash.jpg" alt="">
+            </div>
+        </div>
+        <ul class="nav nav-tabs justify-content-center bg-dark" id="myTab" role="tablist">
+            
+            <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">Home</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">Profile</button>
+            </li>
         <li class="nav-item" role="presentation">
-          <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">Home</button>
+            <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">Contact</button>
         </li>
         <li class="nav-item" role="presentation">
-          <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">Profile</button>
         </li>
-        <li class="nav-item" role="presentation">
-          <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">Contact</button>
-        </li>
-        <li class="nav-item" role="presentation">
-          <button class="nav-link" id="disabled-tab" data-bs-toggle="tab" data-bs-target="#disabled-tab-pane" type="button" role="tab" aria-controls="disabled-tab-pane" aria-selected="false" disabled>Disabled</button>
-        </li>
-      </ul>
-      <div class="tab-content" id="myTabContent">
+    </ul>
+    <div class="tab-content" id="myTabContent">
         <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
             <div class="container">
                 <div class="row">
                     <div class="col-md-3">
-                            <img class= "w-100" src="1.jpg" alt="">
-                            <h5 class="text">hello</h5>
-                        
+                        <div class="icons">
+                            <ul class="fas fa-mountain-city"></ul>
+                        </div>
+                        <img class= "w-100" src="imge/henrik-mohr-Yk8D25dc6ig-unsplash.jpg" alt="">
+                    </div>
+                    <div class="col-md-3">
+                        <div class="icons">
+                            <ul class="fas fa-mountain-city"></ul>
+                        </div>
+                        <img class= "w-100" src="imge/henrik-mohr-Yk8D25dc6ig-unsplash.jpg" alt="">
+                    </div>
+                    <div class="col-md-3 justify-content-space-between">
+                        <div class="icons">
+                            <ul class="fas fa-mountain-city"></ul>
+                        </div>
+                        <img class= "w-100" src="imge/henrik-mohr-Yk8D25dc6ig-unsplash.jpg" alt="">
+                    </div>
+                    <div class="col-md-3">
+                        <div class="icons">
+                            <ul class="fas fa-mountain-city"></ul>
+                        </div>
+                        <img class= "w-100" src="imge/henrik-mohr-Yk8D25dc6ig-unsplash.jpg" alt="">
                     </div>
                 </div>
             </div>
@@ -39,22 +151,58 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-3">
-                        <div class="text">
-                            <h5>hello</h5>
+                        <div class="icons">
+                            <ul class="fas fa-mountain-city"></ul>
                         </div>
-                        <img class= "w-100"  src="1.jpg" alt="">
+                        <img class= "w-100" src="imge/young-kane-CR4Jrxsb2QU-unsplash.jpg" alt="">
+                    </div>
+                    <div class="col-md-3">
+                        <div class="icons">
+                            <ul class="fas fa-mountain-city"></ul>
+                        </div>
+                        <img class= "w-100" src="imge/young-kane-CR4Jrxsb2QU-unsplash.jpg" alt="">
+                    </div>
+                    <div class="col-md-3">
+                        <div class="icons">
+                            <ul class="fas fa-mountain-city"></ul>
+                        </div>
+                        <img class= "w-100" src="imge/young-kane-CR4Jrxsb2QU-unsplash.jpg" alt="">
+                    </div>
+                    <div class="col-md-3">
+                        <div class="icons">
+                            <ul class="fas fa-mountain-city"></ul>
+                        </div>
+                        <img class= "w-100" src="imge/young-kane-CR4Jrxsb2QU-unsplash.jpg" alt="">
                     </div>
                 </div>
             </div>
         </div>
         <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">
             <div class="container">
-                <div class="row">
+                <div class="row g-4">
                     <div class="col-md-3">
-                        <div class="text">
-                            <h5>hello</h5>
+                        <div class="icons">
+                            <ul class="fas fa-mountain-city"></ul>
                         </div>
-                        <img  class= "w-100" src="1.jpg" alt="">
+                        <img  class= "w-100" src="imge/jake-hills-z0gDv24X3uQ-unsplash.jpg" alt="">
+                    </div>
+                    <div class="col-md-3">
+                        <div class="icons">
+                            <ul class="fas fa-mountain-city"></ul>
+                        </div>
+                        <img  class= "w-100" src="imge/jake-hills-z0gDv24X3uQ-unsplash.jpg" alt="">
+                    </div>
+                    <div class="col-md-3">
+                        <div class="icons">
+                            <ul class="fas fa-mountain-city"></ul>
+                        </div>
+                        <img  class= "w-100" src="imge/jake-hills-z0gDv24X3uQ-unsplash.jpg" alt="">
+                    </div>
+                    <div class="col-md-3">
+                        <div class="icons">
+                            <ul class="fas fa-mountain-city"></ul>
+                        </div>
+                        <img  class= "w-100" src="imge/jake-hills-z0gDv24X3uQ-unsplash.jpg" alt="">
                     </div>
                 </div>
             </div>
@@ -63,15 +211,60 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-3">
-                        <div class="text">
-                            <h5>hello</h5>
+                        <div class="icons">
+                            <ul class="fas fa-mountain-city"></ul>
                         </div>
-                        <img class= "w-100" src="1.jpg" alt="">
+                        <img class="w-100" src="imge/jake-hills-z0gDv24X3uQ-unsplash.jpg" alt="">
                     </div>
                 </div>
             </div>
         </div>
       </div>
+    </div>
+    <div class="contact-form w-75 m-auto p-5 bg-body shadow rounded ">
+<div class="contact-us text-center py-3">
+    <h3 class="mb-3">contact</h3>
+</div>
+<input type="email" class="form-control my-3" placeholder="enter-email">
+<textarea name="id" id="" cols="30" rows="10" class="form-control my-3" placeholder="Enter Massage">
+</textarea>
+<button class="btn btn-outline-warning">contact</button>
+    </div>
+    <footer class="bg-dark text-white text-center py-5">
+        <h6>copyright@reserved
+        <span>Zyad Ahmed</span>
+    </h6>
+    <a class="nav-link text-white" href="https://github.com/zizo123">
+        <ul class="fab fa-github"></ul>
+    </a>
+    </footer>
+      
+      
+      
+      
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <script src="js/bootstrap.bundle.min.js"></script>
+
 </body>
 </html>
