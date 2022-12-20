@@ -1,0 +1,19 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+ .btn{
+width: 100px;
+height: 60px;
+background-color:rgba(0, 0, 0, .6);
+color: blue;
+
+}
+.container .items p{
+font-size: x-large;
+font-weight: bolder;
+font-family: serif;
+text-align: center;
+
+}
