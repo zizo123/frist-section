@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stayle/bootstrap.min.css">
+    <link rel="stylesheet" href="stayle/all.min.css">
+    <link rel="stylesheet" href="stayle/main.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="text_Name w-75 border-bottom m-outo pt-5 pb-2">
+        <h1 class="text-muted">
+            <span class="text-info">CRUDS</span>
+            Operating System
+        </h1>
+    </div>
+    <div class="couloms w-75 my-5 mx-outo text-uppercase">
+        <label for="proudctNameinput">ProudctName</label>
+        <input type="text" id="proudctNameinput" class="form-control mb-3">
+        <h6 class="text-danger fw-light" id="messageValidation"></h6>
+        <label for="">product-price</label>
+        <input type="number" id="productPriceInput" class="form-control mb-3">
+        <label for="">product Category</label>
+        <input type="text" id="productCategoryInput" class="form-control mb-3">
+        <label for="">product Description</label>
+        <input type="text" id="productDesInput" class="form-control mb-3">
+        <button onclick="addProduct()" class="btn bg-success fw-bold" id="addbtn">Add product</button>
+        <button onclick="updateProdect()" class="btn bg-success fw-bold" id="updateBtn">updateBtn</button>
+    </div>
+<div class="search w-75 m-outo">
+<input oninput="searchTerm(this.value)" type="text" id="searTearm" class=" form-control" placeholder="Search...">
+</div>
+<div class="header w-75 mx-outo py-5">
+    <table class="table text-center">
+<thead>
+<th>name</th>
+<th>price</th>
+<th>category</th>
+<th>desc</th>
+<th>delet</th>
+<th>update</th>
+</thead>
+<tbody id="tablebody"></tbody>
+    </table>
+</div>
+<footer class="bg-dark text-white text-center py-5">
+    <h6>copyright@reserved
+    <span>Zyad Ahmed</span>
+</h6>
+<a class="nav-link text-white" href="https://github.com/zizo123">
+    <ul class="fab fa-github"></ul>
+</a>
+</footer>
+
+    <script src="java/js.js"></script>
+</body>
+</html>
